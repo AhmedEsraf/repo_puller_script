@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=./">
+  </head>
+  <body>
+    <p>Redirecting to the home page...</p>
+    <script>
+      // For GitHub Pages SPA fallback: preserve path via hash
+      var l = window.location;
+      var base = (document.querySelector('base') && document.querySelector('base').getAttribute('href')) || '/';
+      l.replace(base + '#' + l.pathname + l.search);
+    </script>
+  </body>
+</html>
+
+
