@@ -8,7 +8,7 @@
       "uploadedBy": "Ahmed Esraf",
       "session": "2022-23",
       "topics": ["Syllabus", "Overview"],
-      "assetLink": "https://github.com/AhmedEsraf/repo_puller_script/releases/download/v1.0/Syllabus.pdf",
+      "assetLink": "/repo_puller_script/assets/Syllabus.pdf",
       "uploadDate": "2025-09-01"
     },
     {
@@ -17,7 +17,7 @@
       "uploadedBy": "Jannatul Ferdous",
       "session": "2021-22",
       "topics": ["Loops", "Arrays"],
-      "assetLink": "https://github.com/AhmedEsraf/repo_puller_script/releases/download/v1.0/PracticeSet1.pdf",
+      "assetLink": "/repo_puller_script/assets/PracticeSet1.pdf",
       "uploadDate": "2025-09-02"
     }
   ]
