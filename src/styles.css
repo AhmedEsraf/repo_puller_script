@@ -10,4 +10,13 @@
   @apply max-w-6xl mx-auto px-4;
 }
 
+/* Accent styles */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-primary text-white px-3 py-2 text-sm font-medium hover:bg-primary-600 transition-shadow shadow-sm hover:shadow;
+}
+
+.card-hover {
+  @apply hover:shadow-md transition-shadow;
+}
+
 

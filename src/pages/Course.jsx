@@ -71,11 +71,11 @@ export default function Course() {
         />
       </div>
       {filtered.length === 0 ? (
-        <div className="text-sm text-gray-500">No content found.</div>
+        <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-8 text-center text-sm opacity-80">No content found.</div>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
           {filtered.map(item => (
-            <a key={item.id} href={item.assetLink} target="_blank" rel="noreferrer" className="rounded border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+            <a key={item.id} href={item.assetLink} target="_blank" rel="noreferrer" className="rounded-xl border border-gray-200 dark:border-gray-800 p-4 bg-white dark:bg-gray-900 card-hover">
               <div className="font-medium mb-1">{item.title}</div>
               <div className="text-xs opacity-80 mb-1">By {item.uploadedBy} • {item.session}</div>
               <div className="flex flex-wrap gap-1 mb-2">
@@ -91,7 +91,10 @@ export default function Course() {
                   </button>
                 ))}
               </div>
-              <div className="text-xs opacity-70">Uploaded {item.uploadDate}</div>
+              <div className="flex items-center justify-between text-xs opacity-70">
+                <span>Uploaded {item.uploadDate}</span>
+                <span className="btn-primary px-2 py-1 text-xs">View</span>
+              </div>
             </a>
           ))}
         </div>
