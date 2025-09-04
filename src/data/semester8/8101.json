@@ -1,0 +1,17 @@
+{
+  "courseCode": "8101",
+  "courseName": "Distributed Systems",
+  "contents": [
+    {
+      "id": "dsys1",
+      "title": "Consensus Overview",
+      "uploadedBy": "Demo Uploader",
+      "session": "2023-24",
+      "topics": ["Consensus", "Fault Tolerance"],
+      "assetLink": "/repo_puller_script/assets/MidtermQuestions.pdf",
+      "uploadDate": "2025-09-01"
+    }
+  ]
+}
+
+

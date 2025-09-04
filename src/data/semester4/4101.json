@@ -1,0 +1,17 @@
+{
+  "courseCode": "4101",
+  "courseName": "Algorithms",
+  "contents": [
+    {
+      "id": "al1",
+      "title": "Greedy vs DP Cheatsheet",
+      "uploadedBy": "Demo Uploader",
+      "session": "2023-24",
+      "topics": ["Greedy", "DP"],
+      "assetLink": "/repo_puller_script/assets/MidtermQuestions.pdf",
+      "uploadDate": "2025-09-01"
+    }
+  ]
+}
+
+

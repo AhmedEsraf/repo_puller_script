@@ -1,0 +1,17 @@
+{
+  "courseCode": "3101",
+  "courseName": "Data Structures",
+  "contents": [
+    {
+      "id": "ds1",
+      "title": "Stacks & Queues Overview",
+      "uploadedBy": "Demo Uploader",
+      "session": "2023-24",
+      "topics": ["Stacks", "Queues"],
+      "assetLink": "/repo_puller_script/assets/PracticeSet1.pdf",
+      "uploadDate": "2025-09-01"
+    }
+  ]
+}
+
+

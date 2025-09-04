@@ -13,10 +13,14 @@ function labelForSemester(n) {
 export default function Home() {
   return (
     <div>
-      <h1 className="text-2xl font-semibold mb-4">Semesters</h1>
+      <section className="mb-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/60 p-6 backdrop-blur">
+        <h1 className="text-3xl font-semibold">Centralized University Notes</h1>
+        <p className="mt-2 text-sm opacity-80">Browse notes organized by year and semester. Search, filter, and download instantly from GitHub Pages.</p>
+      </section>
+      <h2 className="text-xl font-semibold mb-3">Semesters</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {semesters.map(n => (
-          <Link key={n} to={`/semester/${n}`} className="rounded border border-gray-200 dark:border-gray-800 p-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+          <Link key={n} to={`/semester/${n}`} className="rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:shadow-sm transition bg-white dark:bg-gray-900">
             <div className="text-center font-medium">{labelForSemester(n)}</div>
           </Link>
         ))}

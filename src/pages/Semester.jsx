@@ -29,19 +29,26 @@ export default function Semester() {
       .then(jsons => {
         setCourses(jsons.map(j => ({ code: j.courseCode, name: j.courseName })))
       })
-      .catch(() => setError('No courses found for this semester.'))
+      .catch(() => setError('No courses found yet. Check back soon.'))
       .finally(() => setLoading(false))
   }, [num])
 
   if (loading) return <Loading />
-  if (error) return <ErrorState message={error} />
+  if (error) return (
+    <div>
+      <h1 className="text-2xl font-semibold mb-4">{labelForSemester(num)}</h1>
+      <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-8 text-center text-sm opacity-80">
+        {error}
+      </div>
+    </div>
+  )
 
   return (
     <div>
       <h1 className="text-2xl font-semibold mb-4">{labelForSemester(num)}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {courses.map(c => (
-          <Link key={c.code} to={`/course/semester${num}/${c.code}`} className="rounded border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+          <Link key={c.code} to={`/course/semester${num}/${c.code}`} className="rounded-xl border border-gray-200 dark:border-gray-800 p-5 hover:shadow-sm transition bg-white dark:bg-gray-900">
             <div className="font-medium">{c.code}</div>
             <div className="text-sm opacity-80">{c.name}</div>
           </Link>
