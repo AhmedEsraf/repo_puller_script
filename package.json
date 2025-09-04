@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "type": "module",
-  "homepage": "https://AhmedEsraf.github.io/repo_puller_sc/",
+  "homepage": "https://AhmedEsraf.github.io/repo_puller_script/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
