@@ -9,6 +9,15 @@ export default function Semester() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
+  function labelForSemester(n) {
+    const s = Number(n)
+    const year = Math.ceil(s / 2)
+    const sem = s % 2 === 1 ? 1 : 2
+    const yearOrd = ['1st', '2nd', '3rd', '4th'][year - 1] || `${year}th`
+    const semOrd = sem === 1 ? '1st' : '2nd'
+    return `${yearOrd} Year ${semOrd} Semester`
+  }
+
   useEffect(() => {
     // List JSON files in this semester via an index we maintain
     fetch(`${import.meta.env.BASE_URL}data/semester${num}/index.json`)
@@ -29,7 +38,7 @@ export default function Semester() {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold mb-4">Semester {num}</h1>
+      <h1 className="text-2xl font-semibold mb-4">{labelForSemester(num)}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {courses.map(c => (
           <Link key={c.code} to={`/course/semester${num}/${c.code}`} className="rounded border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
