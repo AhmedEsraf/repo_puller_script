@@ -79,7 +79,17 @@ export default function Course() {
               <div className="font-medium mb-1">{item.title}</div>
               <div className="text-xs opacity-80 mb-1">By {item.uploadedBy} • {item.session}</div>
               <div className="flex flex-wrap gap-1 mb-2">
-                {item.topics?.map(t => <span key={t} className="text-[11px] rounded bg-gray-100 dark:bg-gray-700 px-2 py-0.5">{t}</span>)}
+                {item.topics?.map(t => (
+                  <button
+                    type="button"
+                    key={t}
+                    onClick={(e)=>{ e.preventDefault(); setQ(t); }}
+                    className="text-[11px] rounded bg-gray-100 dark:bg-gray-700 px-2 py-0.5 hover:bg-gray-200 dark:hover:bg-gray-600"
+                    title={`Filter by ${t}`}
+                  >
+                    {t}
+                  </button>
+                ))}
               </div>
               <div className="text-xs opacity-70">Uploaded {item.uploadDate}</div>
             </a>
