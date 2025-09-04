@@ -1,7 +1,7 @@
 import { readdirSync, statSync, writeFileSync } from 'fs'
 import { join } from 'path'
 
-const dataRoot = join(process.cwd(), 'src', 'data')
+const dataRoot = join(process.cwd(), 'public', 'data')
 
 function isSemesterDir(name) {
   return /^semester\d+$/.test(name)

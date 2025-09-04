@@ -1,0 +1,17 @@
+{
+  "courseCode": "2101",
+  "courseName": "Discrete Mathematics",
+  "contents": [
+    {
+      "id": "d1",
+      "title": "Set Theory Notes",
+      "uploadedBy": "Demo Uploader",
+      "session": "2023-24",
+      "topics": ["Sets", "Logic"],
+      "assetLink": "/repo_puller_script/assets/Lecture1.pdf",
+      "uploadDate": "2025-09-01"
+    }
+  ]
+}
+
+

@@ -1,0 +1,17 @@
+{
+  "courseCode": "7101",
+  "courseName": "Machine Learning",
+  "contents": [
+    {
+      "id": "ml1",
+      "title": "Supervised vs Unsupervised Summary",
+      "uploadedBy": "Demo Uploader",
+      "session": "2023-24",
+      "topics": ["Supervised", "Unsupervised"],
+      "assetLink": "/repo_puller_script/assets/PracticeSet1.pdf",
+      "uploadDate": "2025-09-01"
+    }
+  ]
+}
+
+

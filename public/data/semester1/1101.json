@@ -1,0 +1,26 @@
+{
+  "courseCode": "1101",
+  "courseName": "Introduction to Computer Science",
+  "contents": [
+    {
+      "id": "c1",
+      "title": "Lecture 1 Notes",
+      "uploadedBy": "Ahmed Esraf",
+      "session": "2022-23",
+      "topics": ["Basics", "History of Computing"],
+      "assetLink": "/repo_puller_script/assets/Lecture1.pdf",
+      "uploadDate": "2025-09-03"
+    },
+    {
+      "id": "c2",
+      "title": "Midterm Question Bank",
+      "uploadedBy": "Jannatul Ferdous",
+      "session": "2021-22",
+      "topics": ["Algorithms", "Problem Solving"],
+      "assetLink": "/repo_puller_script/assets/MidtermQuestions.pdf",
+      "uploadDate": "2025-09-02"
+    }
+  ]
+}
+
+

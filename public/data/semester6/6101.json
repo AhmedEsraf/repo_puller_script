@@ -1,0 +1,17 @@
+{
+  "courseCode": "6101",
+  "courseName": "Computer Networks",
+  "contents": [
+    {
+      "id": "cn1",
+      "title": "OSI vs TCP/IP Quick Reference",
+      "uploadedBy": "Demo Uploader",
+      "session": "2023-24",
+      "topics": ["OSI", "TCP/IP"],
+      "assetLink": "/repo_puller_script/assets/Lecture1.pdf",
+      "uploadDate": "2025-09-01"
+    }
+  ]
+}
+
+

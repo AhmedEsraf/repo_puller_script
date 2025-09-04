@@ -1,0 +1,26 @@
+{
+  "courseCode": "1102",
+  "courseName": "Programming Fundamentals",
+  "contents": [
+    {
+      "id": "pf1",
+      "title": "Syllabus Overview",
+      "uploadedBy": "Ahmed Esraf",
+      "session": "2022-23",
+      "topics": ["Syllabus", "Overview"],
+      "assetLink": "/repo_puller_script/assets/Syllabus.pdf",
+      "uploadDate": "2025-09-01"
+    },
+    {
+      "id": "pf2",
+      "title": "Practice Problems Set 1",
+      "uploadedBy": "Jannatul Ferdous",
+      "session": "2021-22",
+      "topics": ["Loops", "Arrays"],
+      "assetLink": "/repo_puller_script/assets/PracticeSet1.pdf",
+      "uploadDate": "2025-09-02"
+    }
+  ]
+}
+
+
